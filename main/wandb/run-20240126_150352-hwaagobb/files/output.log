@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "C:\Users\paras\PycharmProjects\Unet_V2.0\main\npna.py", line 93, in <module>
+    trainer.train_and_evaluate(fold, config)
+  File "C:\Users\paras\PycharmProjects\Unet_V2.0\trainer.py", line 38, in train_and_evaluate
+    for i, (images, labels) in enumerate(self.train_loader):
+  File "C:\Users\paras\anaconda3\envs\venv\Lib\site-packages\torch\utils\data\dataloader.py", line 633, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\paras\anaconda3\envs\venv\Lib\site-packages\torch\utils\data\dataloader.py", line 677, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\paras\anaconda3\envs\venv\Lib\site-packages\torch\utils\data\_utils\fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\paras\anaconda3\envs\venv\Lib\site-packages\torch\utils\data\_utils\fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "C:\Users\paras\anaconda3\envs\venv\Lib\site-packages\torch\utils\data\dataset.py", line 298, in __getitem__
+    return self.dataset[self.indices[idx]]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\paras\PycharmProjects\Unet_V2.0\datasets.py", line 60, in __getitem__
+    mask_file = list(self.mask_dir.glob(name + self.mask_suffix + '.*'))
+                                        ~~~~~^~~~~~~~~~~~~~~~~~
+TypeError: can only concatenate tuple (not "str") to tuple

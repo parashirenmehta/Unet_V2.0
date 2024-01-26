@@ -1,0 +1,1 @@
+{"columns": ["Parameter", "Value"], "data": [["batch_size", "1"], ["learning_rate", "0.0001"], ["num_epochs", "100"], ["model_params", "Do not freeze any layers"], ["seed", "10"], ["num_folds", "5"], ["model", "Unet"], ["comment", "5-fold cross validation"]]}

@@ -1,0 +1,47 @@
+{
+    "os": "Windows-10-10.0.22621-SP0",
+    "python": "3.11.5",
+    "heartbeatAt": "2024-01-26T18:49:49.022658",
+    "startedAt": "2024-01-26T18:49:47.521560",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "C:\\Users\\paras\\PycharmProjects\\Unet_V2.0\\main\\npna.py",
+    "codePathLocal": "npna.py",
+    "codePath": "npna.py",
+    "host": "Shiv",
+    "username": "paras",
+    "executable": "C:\\Users\\paras\\anaconda3\\envs\\venv\\python.exe",
+    "cpu_count": 14,
+    "cpu_count_logical": 20,
+    "cpu_freq": {
+        "current": 1506.0,
+        "min": 0.0,
+        "max": 2300.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1506.0,
+            "min": 0.0,
+            "max": 2300.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 930.3886680603027,
+            "used": 723.4001235961914
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+            "memory_total": 6442450944
+        }
+    ],
+    "memory": {
+        "total": 15.692127227783203
+    }
+}

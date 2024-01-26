@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "C:\Users\paras\PycharmProjects\Unet_V2.0\main\npna.py", line 93, in <module>
+    trainer.train_and_evaluate(fold, config)
+  File "C:\Users\paras\PycharmProjects\Unet_V2.0\trainer.py", line 40, in train_and_evaluate
+    images = images.to(self.device)
+             ^^^^^^^^^
+AttributeError: 'str' object has no attribute 'to'

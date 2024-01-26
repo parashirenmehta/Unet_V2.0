@@ -1,0 +1,34 @@
+Traceback (most recent call last):
+  File "C:\Users\paras\PycharmProjects\Unet_V2.0\main\npna.py", line 93, in <module>
+    trainer.train_and_evaluate(fold, config)
+  File "C:\Users\paras\PycharmProjects\Unet_V2.0\trainer.py", line 42, in train_and_evaluate
+    c = self.model(images)
+        ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\paras\anaconda3\envs\venv\Lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\paras\PycharmProjects\Unet_V2.0\models\unet_model.py", line 26, in forward
+    x1 = self.inc(x)
+         ^^^^^^^^^^^
+  File "C:\Users\paras\anaconda3\envs\venv\Lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\paras\PycharmProjects\Unet_V2.0\models\unet_parts.py", line 25, in forward
+    return self.double_conv(x)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\paras\anaconda3\envs\venv\Lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\paras\anaconda3\envs\venv\Lib\site-packages\torch\nn\modules\container.py", line 217, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "C:\Users\paras\anaconda3\envs\venv\Lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\paras\anaconda3\envs\venv\Lib\site-packages\torch\nn\modules\batchnorm.py", line 171, in forward
+    return F.batch_norm(
+           ^^^^^^^^^^^^^
+  File "C:\Users\paras\anaconda3\envs\venv\Lib\site-packages\torch\nn\functional.py", line 2450, in batch_norm
+    return torch.batch_norm(
+           ^^^^^^^^^^^^^^^^^
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 5.72 GiB (GPU 0; 6.00 GiB total capacity; 6.29 GiB already allocated; 0 bytes free; 6.30 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

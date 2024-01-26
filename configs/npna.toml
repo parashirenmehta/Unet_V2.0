@@ -1,0 +1,11 @@
+project = 'npna'
+model = 'Unet'
+seed = 10
+image_dir = 'C:/Users/paras/eelgrass/Reports/13074_csv_image_annotation_report/Data_Images_All/'
+mask_dir = 'C:/Users/paras/eelgrass/Reports/13074_csv_image_annotation_report/Data_Masks_Canny_denoised/'
+num_folds = 5
+batch_size = 1
+learning_rate = 0.0001
+epochs = 100
+save_model_weights = 'C:/Users/paras/eelgrass/model_weights/'
+
